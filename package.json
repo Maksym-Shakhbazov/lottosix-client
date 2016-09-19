@@ -1,10 +1,10 @@
 {
-  "name": "ang2-test",
+  "name": "lottosix-client",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
-    "docker-build": "docker build -t ang2-test .",
-    "docker": "npm run docker-build && docker run -it --rm -p 3000:3000 -p 3001:3001 ang2-test",
+    "docker-build": "docker build -t lottosix-client .",
+    "docker": "npm run docker-build && docker run -it --rm -p 3000:3000 -p 3001:3001 lottosix-client",
     "pree2e": "npm run webdriver:update",
     "e2e": "tsc && concurrently \"http-server -s\" \"protractor protractor.config.js\" --kill-others --success first",
     "lint": "tslint ./app/**/*.ts -t verbose",
